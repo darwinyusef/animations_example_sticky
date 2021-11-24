@@ -12,99 +12,6 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="Webflow" name="generator" />
         <link href="./box_files/boxpic-landing.webflow.b989a0c48.css" rel="stylesheet" type="text/css" />
-        <style>
-
-        
-        .col-animate-left{
-            animation-name: intro-left;
-            animation-timing-function: ease-in;
-            animation-duration: 1s;
-            animation-delay: 2s;   
-        }
-
-        .col-animate-left-out{
-            animation-name: intro-left-out;
-            animation-timing-function: ease-out;
-            animation-duration: 1s;
-            animation-delay: 2s;    
-        }
-
-        .col-animate-right{
-            animation-name: intro-right;
-            animation-timing-function: ease-in;
-            animation-duration: 1s; 
-            animation-delay: 2s;  
-        }
-
-        .col-animate-right-out{
-            animation-name: intro-right-out;
-            animation-timing-function: ease-out;
-            animation-duration: 1s; 
-            animation-delay: 2s;  
-        }
-
-        @keyframes intro-left {
-            from {
-                margin-left:-100%;
-                opacity: 0%; 
-            }
-
-            to {
-                margin-left:0%;
-                opacity: 100%; 
-            }
-        }
-
-        @keyframes intro-left-out {
-            from {
-                margin-left:0%;
-                opacity: 100%; 
-            }
-
-            to {
-                margin-left:-100%;
-                opacity: 0%;
-            }
-        }
-
-        @keyframes intro-right {
-            0% {
-                left: 100%;
-                position: absolute; 
-                opacity: 0%;
-            }
-            
-            50% {
-                opacity: 30%;
-            }
-            
-            100% {
-                left: 0%;
-                position: inherit;
-                opacity: 100%;
-            }
-        }
-
-        @keyframes intro-right-out {
-            0% {
-                left: 0%;
-                position: inherit;
-                opacity: 100%;
-            }
-            
-            50% {
-                opacity: 30%;
-            }
-            
-            100% {
-                left: 100%;
-                position: absolute; 
-                opacity: 0%;
-            }
-        }
-
-        </style>
-        <style></style>
         <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
         <script type="text/javascript">
             !(function (o, c) {
@@ -471,87 +378,12 @@
             console.log('arriba');
             if(intvalue >= 28 && intvalue < 41){
                 code = 0; 
-
-                if(intvalue == 28){
-                    $('#mobile_colum_1 div.col-animate-left').css({
-                        'margin-left': '-100%',
-                        'opacity': '0%' 
-                    });
-                    $('#mobile_colum_1 div.col-animate-rith').css({
-                        'left': '100%',
-                        'position': 'absolute',
-                        'opacity': '0%' 
-                    });
-                    console.log(1);
-                } else if(intvalue == 30){
-                    $('#mobile_colum_1 div.col-animate-left').css({
-                        'margin-left': '0%',
-                        'opacity': '100%' 
-                    });
-
-                    $('#mobile_colum_1 div.col-animate-rith').css({
-                        'left': '0%',
-                        'position': 'inherit',
-                        'opacity': '100%' 
-                    });
-                    console.log(2);
-                }
             }
             if(intvalue >= 42 && intvalue <= 57){
                 code = 1; 
-
-                if(intvalue == 42){
-                    $('#mobile_colum_1 div.col-animate-left').css({
-                        'margin-left': '-100%',
-                        'opacity': '0%' 
-                    });
-                    $('#mobile_colum_1 div.col-animate-rith').css({
-                        'left': '100%',
-                        'position': 'absolute',
-                        'opacity': '0%' 
-                    });
-                    console.log(1);
-                } else if(intvalue == 44){
-                    $('#mobile_colum_1 div.col-animate-left').css({
-                        'margin-left': '0%',
-                        'opacity': '100%' 
-                    });
-
-                    $('#mobile_colum_1 div.col-animate-rith').css({
-                        'left': '0%',
-                        'position': 'inherit',
-                        'opacity': '100%' 
-                    });
-                    console.log(2);
-                }
             }
             if(intvalue >= 58 && intvalue <= 70){
                 code = 2; 
-
-                if(intvalue == 58){
-                    $('#mobile_colum_1 div.col-animate-left').css({
-                        'margin-left': '-100%',
-                        'opacity': '0%' 
-                    });
-                    $('#mobile_colum_1 div.col-animate-rith').css({
-                        'left': '100%',
-                        'position': 'absolute',
-                        'opacity': '0%' 
-                    });
-                    console.log(1);
-                } else if(intvalue == 60){
-                    $('#mobile_colum_1 div.col-animate-left').css({
-                        'margin-left': '0%',
-                        'opacity': '100%' 
-                    });
-
-                    $('#mobile_colum_1 div.col-animate-rith').css({
-                        'left': '0%',
-                        'position': 'inherit',
-                        'opacity': '100%' 
-                    });
-                    console.log(2);
-                }
             }
         }
         else {
@@ -570,11 +402,6 @@
         $('#title_streamline').text(content[code].title);
         $('#image_streamline').attr('src', content[code].image);
         $('#text_streamline').text(content[code].text);
-        if( animate == 0 ){
-            console.log(animate);
-            animate = 1;
-            
-        }
     });
 
                     // $('#mobile_colum_1 div').removeClass('col-animate-left');
